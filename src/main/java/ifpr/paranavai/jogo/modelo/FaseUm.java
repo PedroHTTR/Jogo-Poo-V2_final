@@ -80,6 +80,9 @@ public class FaseUm extends Fase {
         } else {
             ImageIcon fimDeJogo = new ImageIcon(getClass().getResource("/fimdejogo.jpg"));
             graficos.drawImage(fimDeJogo.getImage(), 0, 0, this);
+            
+            super.desenhaVida(graficos);{
+            }
         }
         g.dispose();
     }

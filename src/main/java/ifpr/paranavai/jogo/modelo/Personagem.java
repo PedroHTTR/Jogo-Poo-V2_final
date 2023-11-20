@@ -78,7 +78,7 @@ public class Personagem extends ElementoGrafico {
     public void parar(KeyEvent tecla) {
         int codigo = tecla.getKeyCode();
         switch (codigo) {
-            case KeyEvent.VK_UP:
+            case KeyEvent.VK_W:
                 deslocamentoEmY = 0;
                 break;
             case KeyEvent.VK_S:
@@ -126,7 +126,13 @@ public class Personagem extends ElementoGrafico {
     public void setPontuacao(int pontuacao) {
         this.pontuacao = pontuacao;
     }
+
+    public int getVida() {
+        return this.vida;
+    }
+
+    public void setVida(int vida) {
+        this.vida = 3;
+    }
     
-
-
 }
